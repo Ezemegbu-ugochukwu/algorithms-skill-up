@@ -9,7 +9,8 @@ public class UniqueCharacters {
     public static boolean hasUniqueChars(String str) {
 
        String [] strArray = str.split("");
-       List<String> list = Arrays.asList(strArray);
+      // List<String> list = Arrays.asList(strArray);
+        List<String> list = Arrays.asList(strArray);
         Set<String> set = new HashSet<>(list);
         if (list.size() == set.size()){
             return true;
