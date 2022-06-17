@@ -9,6 +9,7 @@ public class highAndLow {
     public static String highAndLow(String numbers) {
         String result;
         String[] nums = numbers.split("");
+        System.out.println(nums);
         int minVal = Integer.MAX_VALUE;
         int maxVal = Integer.MIN_VALUE;
         for (int i = 0; i < nums.length; i++) {
