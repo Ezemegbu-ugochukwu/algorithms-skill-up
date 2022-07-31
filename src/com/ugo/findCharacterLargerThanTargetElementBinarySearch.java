@@ -1,6 +1,6 @@
 package com.ugo;
 
-public class findCharacterLargerThanTargetElement {
+public class findCharacterLargerThanTargetElementBinarySearch {
     public static void main(String[] args) {
      char [] num = {'a', 'c', 'e', 'f', 'g'};
      char target = 'g';

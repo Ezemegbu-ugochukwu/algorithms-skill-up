@@ -1,6 +1,6 @@
 package com.ugo;
 
-public class findANumberGreaterOrEqualToTarget {
+public class findANumberGreaterOrEqualToTargetBinarySearch {
     public static void main(String[] args) {
         int [] num = {1,2,3,4,5,7};
         System.out.println(findANumberGreaterOrEqualToTarget(num, 8));
