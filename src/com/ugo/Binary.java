@@ -7,19 +7,25 @@ import java.util.List;
 
 public class Binary {
     public static void main(String[] args) {
-        System.out.println(arrayPacking(Arrays.asList(24,85,0)));
+        System.out.println(arrayPacking(Arrays.asList(24,85,7)));
     }
     public static int arrayPacking(List<Integer> integers) {
+
         Collections.reverse(integers);
+//        System.out.println(integers);
         int result = 0;
         String str = "";
         for (int i = 0; i < integers.size(); i++) {
+
          //   Integer integer = integers.get(i);
+//            System.out.println("ans" + integers.get(i));
             String str1 = Integer.toBinaryString(integers.get(i)); //returns a string
             if (str1.length() < 8){
                 int remainder = 8 - str1.length();
                 String zero = "0".repeat(remainder);
+                System.out.println("ans" + zero);
                 str1 = zero.concat(str1);
+                System.out.println(str1);
             }
             str += str1;
            result = Integer.parseInt(str,2);

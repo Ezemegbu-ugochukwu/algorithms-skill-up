@@ -2,6 +2,7 @@ package com.ugo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Atm {
     public static void main(String[] args) {
@@ -18,7 +19,9 @@ public class Atm {
         System.out.println(withdraw(370));
         System.out.println(withdraw(230));
     }
-    public static ArrayList<Integer> withdraw(int amount) {
+    public static List<Integer> withdraw(int amount) {
+
+//        List<Integer> result = new ArrayList<>();
      int twenty = amount / 20; //230/20 = 11 rem 10
      int fifty  = 0;  //20+20+10(rem)
      int remainder = amount % 20; //230 % 20 ==10
@@ -34,10 +37,10 @@ public class Atm {
         // hund = 1, fitt = 1, twent = 4
      int hundred = twenty / 5;
      twenty %= 5;
+//
+        return new ArrayList<>(Arrays.asList(hundred,fifty,twenty));
 
-
-
-        return new ArrayList<Integer>(Arrays.asList(hundred, fifty, twenty));
+//        return new ArrayList<Integer>(Arrays.asList(hundred, fifty, twenty));
     }
 }
 

@@ -2,8 +2,8 @@ package com.ugo;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int [] num = {1,2,3,4,5,6};
-        System.out.println(binarySearch(num, 1));
+//        int [] num = {1,2,3,4,5,6};
+        System.out.println(binarySearch(new int [] {1,2,3,4,5,6}, 5));
     }
     public static int binarySearch(int [] num, int target){
       int start = 0;
