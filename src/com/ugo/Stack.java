@@ -7,9 +7,9 @@ public class Stack {
        stack.push(12);
        stack.push(13);
        stack.push(14);
-       stack.push(14);
-       stack.push(14);
-       stack.push(14);
+//       stack.push(14);
+//       stack.push(14);
+//       stack.push(14);
 
         System.out.println(stack.pop());
         System.out.println(stack.pop());
